@@ -7,13 +7,13 @@ import {
 //Main app file
 
 import './App.css';
-import Home from `./containers/Home`;
+import Home from './containers/Home';
 
 function App() {
   return (
     <Router>
       <Switch>
-        <Route path = `/`>
+        <Route path = "/">
           <Home />
         </Route>
       </Switch>
