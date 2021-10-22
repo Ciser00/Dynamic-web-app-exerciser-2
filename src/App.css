@@ -7,4 +7,44 @@
 .WeatherCard{
   border:  1px solid black;
   border-radius: 8px;
+
 }
+
+
+
+
+.Subheadder{
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.CurrentTempratureWrapper{
+  padding: 20px;
+  text-align: center;
+}
+
+.CurrentTemprature{
+  font-size: 96px;
+  font-weight: bold;
+  font-family: serif;
+  margin: 0;
+}
+
+.WeatherImage{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  font-size: 100px;
+}/*font size is how you adjust size of image */
+
+@media (min-width: 800px){
+    .WeatherCard{
+      flex-direction: row;
+    }
+    .City{
+      font-size: 100px;
+    }
+
+  }
