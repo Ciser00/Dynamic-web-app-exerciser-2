@@ -1,17 +1,14 @@
 .App{
   margin: 0 auto;
   max-width: 1080px;
-  padding: 0 25px;
+  
+
 }
 
 .WeatherCard{
   border:  1px solid black;
   border-radius: 8px;
-
 }
-
-
-
 
 .Subheadder{
   font-size: 14px;
@@ -20,15 +17,12 @@
 }
 
 .CurrentTempratureWrapper{
-  padding: 20px;
   text-align: center;
 }
 
 .CurrentTemprature{
-  font-size: 96px;
-  font-weight: bold;
-  font-family: serif;
-  margin: 0;
+  font-size: 30px;
+
 }
 
 .WeatherImage{
@@ -36,9 +30,11 @@
   display: flex;
   justify-content: center;
   padding-top: 10px;
-  font-size: 100px;
-}/*font size is how you adjust size of image */
 
+}/*font size is how you adjust size of image */
+.WeatherImageWrapper{
+    font-size: 150px;
+}
 @media (min-width: 800px){
     .WeatherCard{
       flex-direction: row;
@@ -46,5 +42,38 @@
     .City{
       font-size: 100px;
     }
-
   }
+.CityWrapper{
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 20px;
+  font-size: 20px;
+}
+.Lvl1Wrapper{
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+}
+.Lvl2Wrapper{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+
+}
+.LowHighTempWrapper{
+  align-items: center;
+  display: flex;
+  justify-content:space-between;
+  align-self:auto;
+}
+
+.CurrentLowTemp{
+  padding-right: 20px;
+  padding-left: 5px;
+}
+.CurrentHighTemp{
+  padding-left: 5px;
+}

@@ -24,7 +24,7 @@ function Home(){
     if (city) {
       axios
       .get(
-        `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}`
+        `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=imperial`
       )
       .then(function (response) {
         setWeatherData(response.data);
@@ -60,8 +60,13 @@ function Home(){
   return (
     <main className="App">
       <header>
-        <p> <a href="/?city=paris"> Paris </a> </p>
-        <p> <a href="/?city=tokyo"> Tokyo </a> </p>
+        <div className = "CityWrapper">
+          <p> <a href="/?city=paris"> Paris </a> </p>
+          <p> <a href="/?city=tokyo"> Tokyo </a> </p>
+          <p> <a href="/?city=albany"> Albany </a> </p>
+          <p> <a href="/?city=rochester"> Rochester </a> </p>
+          <p> <a href="/?city=rome"> Rome </a> </p>
+        </div>
       </header>
       <WeatherCard
         cloudiness={cloudiness}
@@ -74,6 +79,7 @@ function Home(){
       />
     </main>
   );
+
 }
 
 export default Home;
