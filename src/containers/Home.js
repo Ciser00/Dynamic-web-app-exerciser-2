@@ -11,15 +11,11 @@ function useQuery(){
 function Home(){
   const [city, setCity] = useState();
   const [weatherData, setWeatherData] = useState();
-
   let query = useQuery();
-
-  //const URL =
   useEffect(() =>{
     const cityValue = query.get("city");
     setCity(cityValue);
   }, [query]);
-
   useEffect(() => {
     if (city) {
       axios
@@ -37,11 +33,6 @@ function Home(){
     }
   }, [city]);
 
-
-
-
-  //url search pearms
-  //google.com/>horse=true&dog=false
   const { cloudiness, currentTemp, highTemp, humidity, lowTemp, weatherType, windSpeed
   } = useMemo(() => {  //destructering the object
     if (!weatherData) return{};
@@ -60,7 +51,7 @@ function Home(){
   return (
     <main className="App">
       <header>
-        <div className = "CityWrapper">
+        <div className="CityWrapper">
           <p> <a href="/?city=paris"> Paris </a> </p>
           <p> <a href="/?city=tokyo"> Tokyo </a> </p>
           <p> <a href="/?city=albany"> Albany </a> </p>

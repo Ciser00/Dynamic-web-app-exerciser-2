@@ -1,6 +1,5 @@
 import React from 'react';
 import WeatherImage from './WeatherImage';
-
 function WeatherCard({
   cloudiness="Unknow",
   currentTemp="Unknow",
@@ -55,16 +54,3 @@ function WeatherCard({
 
 
 export default WeatherCard;
-//remove consol logs
-//day currentDate.getDay  gives num need to pull out from a const list
-//style
-//add 2 cities
-//put 4 or 5 cities across the top
-//one box with all the info
-//nice background color
-//gradiant color background
-
-//vg design
-//web dev
-//ux
-//watch end of lecture for github pages
